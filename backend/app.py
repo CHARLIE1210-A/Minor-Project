@@ -19,8 +19,8 @@ new_movies = pickle.load(open('new_movies.pkl','rb'))
 similarity = pickle.load(open('similarity.pkl','rb'))
 
 # Initialize Spotify client credentials manager
-client_id='6fe4df013710494998490f44538cc49d'
-client_secret='8418a5bcc47e48b9bd50f6ffcf54030a'
+client_id='CLIENT_ID'
+client_secret='CLIENT_SECRET_ID'
 client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
